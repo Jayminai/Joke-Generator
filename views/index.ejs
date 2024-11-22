@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs') %>
+
+<div class="container">
+    <% if (!locals.intro && !locals.setup && !locals.delivery) { %>
+    <div class="container form">
+        <h3 class="mb-4">What's your name?</h3>
+        <p class="lead">We will fetch a custom joke just for you!</p>
+
+        <!-- Joke Form -->
+        <form action="/getJoke" method="POST">
+            <div class="mb-3">
+                <label for="userName" class="form-label">Enter your name:</label>
+                <input type="text" class="form-control" id="userName" name="name" placeholder="Your name here" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Joke</button>
+        </form>
+    </div>
+    <% } else { %>    
+    <!-- Joke Result Section -->
+    <div class="container" id="jokeResult" class="joke-box mt-4" >
+        <h4 id="jokeHeader" class="text-success">Hey <strong><%= userName %></strong>, Here's a <%= category %> joke for you:</h4>
+        <p id="jokeText"><em><%= setup %></em></p>
+        <hr>
+        <p id="jokeText"><%= delivery %></p>
+    </div>
+    <% } %>
+</div>
+
+<%- include('partials/footer.ejs') %>

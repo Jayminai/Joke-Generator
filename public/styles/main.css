@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+.container {
+    flex: 1;
+}
+.logo {
+    border-radius: 50%;
+}
+body {
+    background: linear-gradient(135deg, #f9d423, #ff4e50); 
+    color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0; 
+}
+
+.header, .footer {
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1{
+    margin: 0;
+}
+
+.form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; 
+    margin-top: 20px;
+}
+
+#jokeResult {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    max-width: 1000px; 
+    margin-top: 20px;
+    flex-direction: column;
+}
+#jokeHeader {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#jokeText {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.joke-box {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.form-control {
+    font-size: 1.1rem;
+}
+
+.form-label {
+    font-size: 1.1rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+}
